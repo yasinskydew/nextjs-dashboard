@@ -1,7 +1,0 @@
-FROM VladimirGav/gemma4-26b-16GB-VRAM-Uncensored
-
-# Устанавливаем системный промт, запрещающий думать
-SYSTEM "You are a direct and concise assistant. Do not reason inside <think> tags. Output the final response immediately."
-
-# Дополнительно можно обрезать генерацию, если модель все равно пытается вызывать тег
-PARAMETER stop "<think>"
